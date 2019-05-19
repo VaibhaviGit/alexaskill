@@ -1,0 +1,150 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "smart shopping",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.SearchAction<object@LocalBusiness>",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "getretailer",
+                    "slots": [
+                        {
+                            "name": "retailer",
+                            "type": "retailerNames"
+                        }
+                    ],
+                    "samples": [
+                        "Get me itemlist for {retailer}",
+                        "item list for {retailer}",
+                        "tell me about {retailer}"
+                    ]
+                },
+                {
+                    "name": "placeorder",
+                    "slots": [
+                        {
+                            "name": "order",
+                            "type": "retailerNames"
+                        },
+                        {
+                            "name": "items",
+                            "type": "itemNames"
+                        }
+                    ],
+                    "samples": [
+                        "order for {items} from {order}",
+                        "place an order from {order} for {items}",
+                        "order from {order} for {items}",
+                        "place order for {order} for {items}",
+                        "place order from {order} for the item {items}",
+                        "order {order} for {items}"
+                    ]
+                },
+                {
+                    "name": "getprice",
+                    "slots": [
+                        {
+                            "name": "prices",
+                            "type": "itemNames"
+                        }
+                    ],
+                    "samples": [
+                        "tell me price of {prices}",
+                        "price of {prices}",
+                        "what is the price of {prices}",
+                        "what is price of {prices}",
+                        "price for {prices}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "retailerNames",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Vegetable shop"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "G Mart"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Fresh India"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "itemNames",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Sugar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Salt"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Potato"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Tomato"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cheese cake"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bread"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Rice"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
